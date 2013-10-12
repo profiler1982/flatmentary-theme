@@ -1,0 +1,61 @@
+/* Fallback Mode Panel */
+PanelToplevel,
+PanelWidget,
+PanelAppletFrame,
+PanelApplet,
+PanelSeparator {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#333, 1.2)),
+                                     to (shade (#333, 0.85)));
+
+    border-width: 0;
+
+    color: #f3f3f3;
+}
+
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+    -PanelMenuBar-icon-visible: true;
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#333, 1.2)),
+                                     to (shade (#333, 0.85)));
+
+    border-width: 0;
+    color: #f3f3f3;
+}
+PanelApplet GtkLabel
+PanelApplet .button GtkLabel {
+      color: #f3f3f3;
+}
+
+
+PanelApplet .button {
+    -GtkButton-inner-border: 1;
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#333, 1.2)),
+                                     to (shade (#333, 0.85)));
+
+    border-color: shade (#333, 0.8);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+    color: #f3f3f3;
+}
+
+PanelApplet .button:active,
+PanelApplet .button:prelight:active {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@button_bg_color, 0.85)),
+                                     to (shade (@button_bg_color, 1.12)));
+                                     color: #f3f3f3;
+}
+
+PanelApplet .button:prelight {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@button_bg_color, 1.12)),
+                                     to (shade (@button_bg_color, 0.97)));
+                                     color: #f3f3f3;
+}

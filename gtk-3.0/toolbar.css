@@ -1,0 +1,295 @@
+/***********
+* Toolbars    *
+***********/
+.toolbar {
+    -GtkWidget-window-dragging: true;
+    
+    padding: 3px;
+    color: #f3f3f3;
+    border-style: solid;
+	border-width: 0 0 1px 0;
+	-unico-inner-stroke-width: 0 0 1px 0;
+
+	border-color: #8e9093;
+	
+     background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (#ecf0f3),
+				     to (#ecf0f3));
+			  
+			   -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (#b1b1b1),
+                    to (#b1b1b1));
+
+
+               -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (#ecf0f3),
+                    to (#ecf0f3));
+				     
+				     
+}
+.toolbar .separator {
+    border-width: 0;
+}
+
+.toolbar .entry,
+.toolbar .entry:active,
+.toolbar .entry:focus,
+.toolbar .entry:insensitive {
+    padding: 3px;
+    -GtkEntry-progress-border: 0;
+    border-radius: 6px;
+    
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#313539),
+                                     to (#4d5055));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#000, 0.34)),
+                     to (alpha (#000, 0.20)));
+                     border-radius: 6px;
+    
+ border-color: #545457;
+ color: #f3f3f3;
+}
+
+
+
+/*********************
+* Secondary Toolbars *
+*********************/
+
+
+
+.secondary-toolbar.toolbar .entry {
+    padding: 3px;
+    -GtkEntry-progress-border: 0;
+    border-radius: 12px;
+    
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#313539),
+                                     to (#4d5055));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#000, 0.34)),
+                     to (alpha (#000, 0.20)));
+                     border-radius: 6px;
+    
+ border-color: #545457;
+ color: #f3f3f3;
+}
+
+
+.secondary-toolbar.toolbar {
+color:#f3f3f3;
+    padding: 2px;
+    -unico-inner-stroke-width: 1px 0 1px 0;
+
+    background-image: -gtk-gradient (linear,
+		     left top,
+		     left bottom,
+		     from (shade (#4e5156, 0.84)),
+		     to (shade (#292c31, 0.80)));
+
+    border-color: shade (#333, 0.50);
+}
+
+
+
+.secondary-toolbar.toolbar .button {
+
+       -unico-border-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (shade (#333, 0.74)),
+        to (shade (#333, 0.61)));
+        
+        
+         color:#f3f3f3;
+   padding: 2,5px 4px 2,5px 4px;
+    text-shadow: 0 1 alpha (#333, 0.4);
+    icon-shadow: 0 1 alpha (#333, 0.4);
+     background-image: -gtk-gradient (linear,
+            left top,
+            left bottom,
+            from (#4d5055),
+            to (#313539));
+}
+
+/*****************
+ * GtkSpinButton SecondaryToolbar *
+ *****************/
+.secondary-toolbar.toolbar .spinbutton .button {
+    border-radius: 0;
+    border-width: 0 0 0 1px;
+    background-color: @transparent;
+    background-image: none;
+    -unico-outer-stroke-width: 0;
+    -unico-inner-stroke-width: 0;
+    padding: 2px 6px;
+       color: #fff;
+}
+
+.secondary-toolbar.toolbar .spinbutton .button:active,
+.secondary-toolbar.toolbar .spinbutton .button:active:hover {
+
+    background-color: alpha (#000, 0.05);
+	background-image: none;
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.74)),
+                     to (shade (@base_color, 0.74)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
+                       color: #fff;
+}
+
+.secondary-toolbar.toolbar.spinbutton .button:focus,
+.secondary-toolbar.toolbar .spinbutton .button:focus:active {
+-unico-border-gradient:  -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
+}
+
+.secondary-toolbar.toolbar .spinbutton .button:insensitive,
+.secondary-toolbar.toolbar .spinbutton .button:focus:insensitive {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+    color: @insensitive_color;
+}
+
+.secondary-toolbar.toolbar .spinbutton .button:last-child {
+    border-width: 0 0 0 1px;
+    border-radius: 0 2px 2px 0;
+    -unico-outer-stroke-width: 0;
+       color: #fff;
+}
+
+.secondary-toolbar.toolbar .spinbutton .button:first-child {
+    border-width: 1px 0 0 0;
+    border-radius: 2px 0 0 2px;
+    -unico-outer-stroke-width: 0;
+       color: #fff;
+}
+
+/******************
+* Bottom Toolbars *
+******************/
+
+.bottom-toolbar.toolbar {
+    padding:6px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    -unico-inner-stroke-width: 1px;
+
+    border-color: shade (#515151, 0.66);
+    
+     background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (#4e5156),
+				     to (#292c31));
+				     
+                 -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#333, 2)),
+                    to (alpha (#333, 2)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#fff, 0.03)),
+                    to (alpha (#fff, 0.10)));
+}
+
+.bottom-toolbar.toolbar .button {
+    padding: 0px 8px 0px 8px;
+  
+}
+
+
+/*******************
+ * Inline toolbars *
+ *******************/
+
+
+.inline-toolbar.toolbar {
+color: @text_color;
+    -GtkToolbar-button-relief: normal;
+    -unico-inner-stroke-width: 1px;
+    border-width: 0 1px 1px 1px;
+    padding: 0;
+    -unico-border-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (shade (@bg_color, 0.70)),
+        to (shade (@bg_color, 0.70)));
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@base_color, 0.92)),
+                                     to (shade (@base_color, 0.98)));
+
+}
+
+GtkPaned .inline-toolbar.toolbar {
+color: @text_color;
+    border-width: 1px 0 0 0;
+    /*FIXME: This should probably use alpha just in case */
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@bg_color, 0.92)),
+                                     to (shade (@bg_color, 0.98)));
+}
+
+.inline-toolbar.toolbar .button {
+    border-width: 0 0 0 1px;
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+    -GtkButton-inner-border: 2px 4px 2px 4px;
+    padding: 0;
+    background-image: none;
+    background-color: @transparent;
+}
+
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:active:hover {
+
+    background-color: alpha (#000, 0.05);
+	background-image: none;
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.74)),
+                     to (shade (@base_color, 0.74)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
+}
+
+.inline-toolbar.toolbar GtkToolButton:first-child .button,
+.inline-toolbar.toolbar .button:first-child {
+    border-width: 0;
+    -unico-inner-stroke-width: 0;
+}
+
+.inline-toolbar.toolbar GtkToolButton:last-child .button,
+.inline-toolbar.toolbar .button:last-child {
+    border-width: 0 1px 0 1px;
+    border-radius: 0 2px 2px 0;
+    -unico-outer-stroke-width: 0;
+}
+
+.inline-toolbar.toolbar .button *:insensitive,
+.inline-toolbar.toolbar .button:insensitive {
+    background-image: none;
+    background-color: alpha (#000, 0.02);
+    color: @insensitive_color;
+}

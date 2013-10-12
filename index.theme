@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flatmentary
+Comment=elementary based theme
+Encoding=UTF-8
+
+Name[en_US]=elementary
+
+[X-GNOME-Metatheme]
+GtkTheme=Flatmentary
+MetacityTheme=elementary
+IconTheme=
+CursorTheme=DMZ-Black
+ButtonLayout=close:maximize
