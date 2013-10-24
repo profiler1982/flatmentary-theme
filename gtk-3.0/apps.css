@@ -95,7 +95,7 @@ ConversationListView.view.cell:selected {
 .album-list-view GtkLabel:backdrop,
 .album-list-view GraniteWidgetsRating {
     background-color: #262626;
-	color: @selected_fg_color;
+	color: #fff;
 
     border-radius: 0;
     border-color: #000;
@@ -121,6 +121,7 @@ ConversationListView.view.cell:selected {
     border-width: 1px;
     border-style: solid;
     border-color: #373737;
+    color: #fff
 }
 
 
@@ -130,6 +131,7 @@ ConversationListView.view.cell:selected {
 	background-color: #262626;
     border-width: 0px;
     border-style: none;
+    color: #fff;
 }
 
 .album-list-view GtkTreeView row:selected {
@@ -164,7 +166,7 @@ ConversationListView.view.cell:selected {
  ********/
 
 .panel {
-    background-color: alpha (#ecf0f3, 0.0);
+    background-color: alpha (#ecf0f3, 0.7);
     color: #000;
     font-weight: bold;
 }

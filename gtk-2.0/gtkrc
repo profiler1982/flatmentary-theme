@@ -8,7 +8,7 @@
 # See the file COPYING for the full license text.
 
 gtk_color_scheme	= "bg_color:#ecf0f3\nselected_bg_color:#4CB2FF\nbase_color:#FFF"	# Background, base
-gtk_color_scheme	= "fg_color:#C4C4C4\nselected_fg_color:#fff\ntext_color:#515151"	# Foreground, text
+gtk_color_scheme	= "fg_color:#515151\nselected_fg_color:#fff\ntext_color:#515151"	# Foreground, text
 gtk_color_scheme 	= "sidebar_color:#f2f4f5"                                           # Custom colors
 gtk_color_scheme	= "tooltip_bg_color:#000\ntooltip_fg_color:#FFF"                    # Tooltips
 gtk_color_scheme	= "link_color:#08C"                                                 # Hyperlinks
@@ -410,7 +410,7 @@ style "murrine-toolbar" = "murrine-default"
 	engine "murrine" {
 		contrast			= 1.13
 		lightborder_shade		= 1.0
-		gradient_shades     		= {1.0,0.94,0.94,0.88}
+		gradient_shades     		= {1.0,1.0,1.0,1.0}
 	}
 }
 
