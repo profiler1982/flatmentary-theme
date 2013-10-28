@@ -57,7 +57,7 @@ RBDisplayPageTree .cell:selected {
 .sidebar.view,
 .source-list,
 .source-list.view {
-    background-color: #ecf0f3;
+    background-color: #fff;
     border-radius: 0;
     color: #4e5156;
 }
@@ -80,37 +80,21 @@ RBDisplayPageTree .cell:selected {
 .sidebar.view:prelight:selected,
 .source-list.view:selected,
 .source-list.view:prelight:selected {
-
-    color: #f3f3f3;
-
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from  (#427ea6),
-                    to (#427ea6));
-}
+    background-color: alpha (#427ea6, 0.3);
+}2
 
 .sidebar.view:selected:backdrop,
 .sidebar.view:prelight:selected:backdrop,
 .source-list.view:selected:backdrop,
 .source-list.view:prelight:selected:backdrop {
-    color: shade (@bg_color, 0.50);
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (alpha (#427ea6, 0.2)),
-                    to (alpha (#427ea6, 0.1)));
+    background-color: alpha (#8EB7D2, 0.2);
                     
 
 }
 
 .sidebar.view:prelight,
 .source-list.view:prelight {
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (alpha (#427ea6, 0.2)),
-                    to (alpha (#427ea6, 0.1)));
+    background-color: alpha (#427ea6, 0.15);
 }
 
 .sidebar-pane-separator,

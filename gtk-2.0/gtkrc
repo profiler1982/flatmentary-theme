@@ -7,7 +7,7 @@
 #
 # See the file COPYING for the full license text.
 
-gtk_color_scheme	= "bg_color:#ecf0f3\nselected_bg_color:#4CB2FF\nbase_color:#FFF"	# Background, base
+gtk_color_scheme	= "bg_color:#fff\nselected_bg_color:#4CB2FF\nbase_color:#FFF"	# Background, base
 gtk_color_scheme	= "fg_color:#515151\nselected_fg_color:#fff\ntext_color:#515151"	# Foreground, text
 gtk_color_scheme 	= "sidebar_color:#f2f4f5"                                           # Custom colors
 gtk_color_scheme	= "tooltip_bg_color:#000\ntooltip_fg_color:#FFF"                    # Tooltips
@@ -69,7 +69,7 @@ style "murrine-default"
 	GtkScrollbar		::has-backward-stepper              = 0  
 	GtkScrollbar		::has-forward-stepper               = 0
 	GtkScrollbar		::min-slider-length                 = 30
-	GtkScrollbar		::slider-width                      = 6
+	GtkScrollbar		::slider-width                      = 8
 	GtkScrollbar		::trough-border                     = 1
 
 	GtkScrolledWindow	::scrollbar-spacing                 = 0

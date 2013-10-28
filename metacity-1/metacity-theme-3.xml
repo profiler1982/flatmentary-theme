@@ -141,12 +141,12 @@
 <!-- ::: TITLES ::: -->
 
 <draw_ops name="title_focused">
-	<title color="#ecf0f3" x="(0 `max` ((width - title_width) / 2)) + 3" y="(0 `max` ((height - title_height) / 2)) + 2"/>
+	<title color="#fff" x="(0 `max` ((width - title_width) / 2)) + 3" y="(0 `max` ((height - title_height) / 2)) + 2"/>
 	<title color="#344047" x="(0 `max` ((width - title_width) / 2)) + 2" y="(0 `max` ((height - title_height) / 2)) + 1"/>
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="#ecf0f3" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 3" y="(0 `max` ((height - title_height) / 2)) + 2"/>
+	<title color="#fff" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 3" y="(0 `max` ((height - title_height) / 2)) + 2"/>
 	<title color="#344047" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 2" y="(0 `max` ((height - title_height) / 2)) + 1"/>
 </draw_ops>
 
@@ -154,7 +154,7 @@
 <!-- ::: TITLEBAR ::: -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="#ecf0f3" x="0" y="0" width="width-0" height="height-0" filled="true" />
+	<rectangle color="#fff" x="0" y="0" width="width-0" height="height-0" filled="true" />
 
 </draw_ops>
 
@@ -164,8 +164,8 @@
 
 <draw_ops name="titlebar_fill_focused">
 	<gradient type="vertical" x="0" y="1" width="width-2" height="height-2">
-		<color value="#ecf0f3"/>
-		<color value="#ecf0f3"/>
+		<color value="#fff"/>
+		<color value="#fff"/>
 	</gradient>
 
 </draw_ops>

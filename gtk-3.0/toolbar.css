@@ -15,8 +15,8 @@
      background-image: -gtk-gradient (linear,
 				     left top,
 				     left bottom,
-				     from (#ecf0f3),
-				     to (#ecf0f3));
+				     from (#fff),
+				     to (#fff));
 			  
 			   -unico-border-gradient: -gtk-gradient (linear,
                     left top, left bottom,
@@ -26,8 +26,8 @@
 
                -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,
-                    from (#ecf0f3),
-                    to (#ecf0f3));
+                    from (#fff),
+                    to (#fff));
 				     
 				     
 }
@@ -39,22 +39,20 @@
 .toolbar .entry:active,
 .toolbar .entry:focus,
 .toolbar .entry:insensitive {
-    padding: 3px;
+    padding: 8px 4px;
     -GtkEntry-progress-border: 0;
-    border-radius: 6px;
+    border-radius: 0px;
     
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#313539),
-                                     to (#4d5055));
+    background-color: #fff; /*Changes color of entry eg. file roller path of files */
 
     -unico-border-gradient: -gtk-gradient (linear,
                      left top, left bottom,
-                     from (alpha (#000, 0.34)),
-                     to (alpha (#000, 0.20)));
-                     border-radius: 6px;
+                     from (alpha (#fff, 1.0)),
+                     to (alpha (#fff, 1.0)));
+                     border-radius: 0px;
     
  border-color: #545457;
- color: #f3f3f3;
+ color: #323232;
 }
 
 

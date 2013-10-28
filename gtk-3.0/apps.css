@@ -166,7 +166,7 @@ ConversationListView.view.cell:selected {
  ********/
 
 .panel {
-    background-color: alpha (#ecf0f3, 0.7);
+    background-color: alpha (#fff, 0.7);
     color: #000;
     font-weight: bold;
 }
@@ -175,7 +175,7 @@ ConversationListView.view.cell:selected {
     background-color: @transparent;
     background-image: -gtk-gradient (linear,
                      left top, left bottom,
-                     from (alpha (#000, 0.0)),
+                     from (alpha (#000, 0.2)),
                      to (alpha (#000, 0.0)));
 }
 

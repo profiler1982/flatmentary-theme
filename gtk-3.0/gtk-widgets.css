@@ -203,7 +203,7 @@ GraniteWidgetsStatusBar {
 /* white text */
 .expander row:selected,
 .expander row:selected:focus,
-.menubar *,
+.menubar *;,
 .menubar *,
 .menubar *:active,
 .menubar *:prelight,
@@ -808,7 +808,7 @@ GtkComboBox.combobox-entry .button:last-child {
           background-image: -gtk-gradient (linear,
             left top,
             left bottom,
-            from (shade (#ecf0f3, 1.0)), /*Changes tab area background in Granite widgets*/
+            from (shade (#fff, 1.0)), /*Changes tab area background in Granite widgets*/
             to (#fff));
  
             
@@ -827,7 +827,7 @@ GtkComboBox.combobox-entry .button:last-child {
 }
 
 .dynamic-notebook .notebook {
-    border-width: 1px 0 0 0;
+    border-width: 1px 0 0 0; /*Changes border width of tab area on Granite widgets*/
     -unico-outer-stroke-style: none;
     -unico-inner-stroke-style: none;
 
@@ -838,14 +838,14 @@ GtkComboBox.combobox-entry .button:last-child {
     -GtkNotebook-tab-overlap: 4px;
     -GtkNotebook-initial-gap: 10px;
 
-    border-color: @transparent; /*Changes bottom border color in tab area on Granite widgets*/
+    border-color: #CFD0D3; /*Changes bottom border color in tab area on Granite widgets*/
     color: @text_color;
     background-color: alpha (@text_color, 0.5);
 
 }
 
 .dynamic-notebook .notebook tab {
-    padding: 2px 3px 0 3px;
+    padding: 3px 3px 0 3px; /*Changes tab padding*/
 
     color: alpha (@text_color, 0.80);
 
@@ -866,20 +866,20 @@ GtkComboBox.combobox-entry .button:last-child {
           background-image: -gtk-gradient (linear, 
             left top,
             left bottom,
-             from (#ecf0f3), /*Changes tab colors*/
-            to (#ecf0f3));
+             from (#fff), /*Changes tab colors*/
+            to (#fff));
             
             
 
     -unico-border-gradient: none;
                      
                      
-    border-color: alpha (#ecf0f3, 0.30);
+    border-color: alpha (#CFD0D3, 1.0);
 
     color: @text_color;
     border-radius: 0px;
 
-    border-width: 0px 0px 0px 0px;
+    border-width: 1px 1px 0px 1px; /*Changes border wdith of active tab*/
     -unico-inner-stroke-width: 1px;
     -unico-outer-stroke-width: 1px;
     -unico-inner-stroke-color: alpha (#fff, 0.30);

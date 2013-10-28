@@ -31,7 +31,7 @@ GtkComboBox.combobox-entry .button {
     text-shadow: 0 1 alpha (#fff, 0.4);
     icon-shadow: 0 1 alpha (#fff, 0.4);
 
-    border-radius: 2.5px;
+    border-radius: 0px; /*Changes radius of toolbar widgets like Files's pathbar*/
 
     -unico-outer-stroke-style: custom;
 	border: 1px solid;
@@ -133,7 +133,7 @@ GtkComboBox.combobox-entry .button {
                      to (alpha (#fff, 0.40)));
 }
 
-.button:active,
+.button:active
 .button:hover:active {
     -unico-focus-border-color: transparent;
     -unico-focus-fill-color: transparent;
@@ -153,8 +153,8 @@ GtkComboBox.combobox-entry .button {
      background-image: -gtk-gradient (linear,
             left top,
             left bottom,
-            from (#ecf0f3), /*Changes widget color (inactive)*/
-            to (#ecf0f3));
+            from (#fff), /*Changes Granite widget color (inactive) like view selection*/
+            to (#fff));
             
             
 }
@@ -190,8 +190,8 @@ GtkComboBox.combobox-entry .button {
 
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (#ecf0f3), /*Changes widget color (active)*/
-                                     to (#ecf0f3));
+                                     from (#C8C8C8), /*Changes Granite widget color (inactive) like view selection*/
+                                     to (#C8C8C8));
                                      
 }
 

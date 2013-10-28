@@ -21,7 +21,7 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width: 4;
+    -GtkRange-slider-width: 6;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 1;
     -GtkRange-trough-border: 2;
